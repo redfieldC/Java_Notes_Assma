@@ -1,0 +1,17 @@
+char c[] = {a,s,s,m,a}
+String s = new String(c);
+assma --
+
+format for String ffunction
+public final class String extends object charsequence, searializable ,comparable (){}
+
+	
+SCP(String constant pool is made to store values) will store the value, the variable is stored in heap memory
+
+String s1 = new String("ameya")
+String s1 = new String("ameya")
+
+immutability concept is used for string object that means string objects are immutable
+It's value cant be changed .ie., it cant be reassigned
+
+Difference in SCP and HEap
