@@ -14,4 +14,20 @@ String s1 = new String("ameya")
 immutability concept is used for string object that means string objects are immutable
 It's value cant be changed .ie., it cant be reassigned
 
+how to change value of String is shown below
+
+package blabal;
+
+public class ameya {
+	public static void main(String args[]) {
+		String s="Ameya";
+		s=s.concat("assaas");
+		System.out.println(s);
+	}
+}
+
+
 Difference in SCP and HEap
+
+scp uses 1 object example: s1="ameya" s2 ='ameya', scp will refer to one object
+however in heap there will be 2 "Ameya" object
