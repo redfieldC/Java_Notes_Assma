@@ -54,3 +54,50 @@ System.out.println(s7);
 //why is char array is reffered over string  for storying password?
 String objects are immmutable in java therefore if a password is stored as plain text , it willl be available in memory, until garbage collector clears it, but string objects
  are stored in string constant pool for reusability and garbage collections is not applicable in scp which is security threat 
+
+char[] c = {'a','b','c'} gives object address but string declared would give the value
+
+code is shown below
+
+public class Stringdemo {
+
+	public static void main(String[] args) {
+		
+String s1="deepak";  //1 object
+String s2=new String("abc");//2 objects
+//ctrl+ click krenge to hume sare constructors show krega 
+String s3=new String("asmaa");
+System.out.println(s3.length()); //5
+String s4=new String(); //empty ye mera empty object create krta hai
+
+	StringBuffer sb=new StringBuffer("rashmi");
+	String s5 =new String(sb);
+	System.out.println(s5);//string buffer and builder mutable object create krte ahi lekin string immutable object create krta hai
+	//isliye humne object pass kraya as an reference  isliye vo immutable object crete krta hai 
+	
+	
+	StringBuilder sr=new StringBuilder("asif");
+	String s6 =new String(sr);
+	System.out.println(sr);//same work krega
+	//to yha hum kya kr rhe hai mutable object ko immutable object me convert kr rhe hai
+	
+	byte[] b= {101,102,103};//byte array ko string constructor me pass krva skte hai
+	String s7=new String(b);
+	//bytes ko convert kr dega characters me
+	System.out.println(s7); //e,f,g
+	
+	//string constructor ke andr char array bhi pass kr skte hai
+	char[] c= {'a','b','c'};
+	String s8=new String(c);
+	System.out.println(s8);
+//WHY CHAR ARRAY IS PREFERRED OVER STRING FOR STORING PASSWORD????
+	//ans-string objects are immutable in java and therefore if a password is stored as plain text it will be available in memory until garbage collector clears it,but
+	//string objects are stored in string literal pool for re usability and garbage collection is not applicable in scp,which is security threat.
+	//while an array,u can explicitly wipe the data after you'are done with it.you can overwrite the array with anything you like,and the password won't be presents anywhere in the system,even before garbage collection.
+	char[] a1=new char[] {'a','b','c'};
+	String a2=new String("abvc");
+	System.out.println("s1 :-"+a1); //code print krega qki object print krata hai isliye ye save hota hai qki isme values hum directly dekh nhi skte 
+	System.out.println("s1 :-"+a2);//string object ke andr ki value print krega
+	
+	}
+}
