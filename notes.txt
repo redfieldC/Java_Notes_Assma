@@ -30,4 +30,18 @@ public class ameya {
 Difference in SCP and HEap
 
 scp uses 1 object example: s1="ameya" s2 ='ameya', scp will refer to one object
-however in heap there will be 2 "Ameya" object
+however in heap there will be 2 "Ameya" objects
+
+
+11 methopds in class
+-cloth
+-equals(object obj)
+-finalize
+-getclass
+-hashcode
+-notify
+-notifyall
+-tostring()
+-wait
+-wait(longtimeout())
+-wait(longtimeout(),int)
