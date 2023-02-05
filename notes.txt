@@ -45,3 +45,12 @@ however in heap there will be 2 "Ameya" objects
 -wait
 -wait(longtimeout())
 -wait(longtimeout(),int)
+
+COnstructor
+
+char []c = {'a','b','c'}
+String s7 = new String(c);
+System.out.println(s7);
+//why is char array is reffered over string  for storying password?
+String objects are immmutable in java therefore if a password is stored as plain text , it willl be available in memory, until garbage collector clears it, but string objects
+ are stored in string constant pool for reusability and garbage collections is not applicable in scp which is security threat 
