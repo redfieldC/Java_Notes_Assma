@@ -1,0 +1,11 @@
+best practise
+
+1)class/interface Nmae: StudentData-
+
+2)method names: addData()
+
+3) variable names : firstName
+
+4) constants : PI, RATE_OF_INT
+
+5)package: com.itvedant.pulse
