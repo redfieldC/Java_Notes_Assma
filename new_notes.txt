@@ -9,3 +9,7 @@ best practise
 4) constants : PI, RATE_OF_INT
 
 5)package: com.itvedant.pulse
+
+6)CTRL + I for alligning the brakcets correctly if they are not correctly alligned
+
+7)variable is name of memory location
