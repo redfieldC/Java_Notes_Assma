@@ -13,3 +13,5 @@ best practise
 6)CTRL + I for alligning the brakcets correctly if they are not correctly alligned
 
 7)variable is name of memory location
+8)Scanner sc = new Scanner(System.in)
+sc.close() statement means we cant take inputs after sc.close
